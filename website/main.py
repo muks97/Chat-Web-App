@@ -1,11 +1,11 @@
+#!flask/bin/python
 from flask import session
 from flask_socketio import SocketIO
 import time
-from application import create_app
-from application.database import DataBase
+from website.application import create_app
+from website.application.database import DataBase
 import config
 
-# SETUP
 app = create_app()
 socketio = SocketIO(app)  # used for user communication
 
